@@ -18,6 +18,7 @@ function countNum(a) {
   }
   return value;
 }
+
 function solve(input) {
   const tmp = input[0].split(' ');
   const tmpFirstNumber = Number(tmp[0]);
