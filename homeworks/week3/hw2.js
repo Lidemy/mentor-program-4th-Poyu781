@@ -8,11 +8,9 @@ const rl = readline.createInterface({
 rl.on('line', (line) => {
   lines.push(line);
 });
-function digits(n) {
-  return Array.from(String(n), Number);
-}
+
 function countNum(a) {
-  const newarr = digits(a);
+  const newarr = Array.from(String(a), Number);
   let value = 0;
   for (let i = 0; i < newarr.length; i += 1) {
     /* eslint-disable-next-line */
