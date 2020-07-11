@@ -24,7 +24,7 @@ function countNum(a) { //   求單個數的各位數指數和
   return value;
 }
 
-function solve(input) { //  判斷 countNum 的和是否等於本身
+function solve(input) { //  判斷 countNum 的值是否等於數字本身
   const tmp = input[0].split(' ');
   const tmpFirstNumber = Number(tmp[0]);
   const tmpLastNumber = Number(tmp[1]);
