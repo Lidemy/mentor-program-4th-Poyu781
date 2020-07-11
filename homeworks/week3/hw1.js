@@ -13,7 +13,7 @@ function solve(input) {
   const tmp = input[0];
   let ans = '';
   for (let i = 1; i <= tmp; i += 1) {
-    ans = `${ans} '*'`;
+    ans += '*';
     console.log(ans);
   }
 }
