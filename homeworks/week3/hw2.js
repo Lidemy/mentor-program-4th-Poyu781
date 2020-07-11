@@ -9,6 +9,11 @@ rl.on('line', (line) => {
   lines.push(line);
 });
 
+rl.on('close', () => {
+  /* eslint-disable-next-line */
+  solve(lines);
+});
+
 function countNum(a) {
   const newarr = Array.from(String(a), Number);
   let value = 0;
@@ -29,6 +34,3 @@ function solve(input) {
     }
   }
 }
-rl.on('close', () => {
-  solve(lines);
-});
