@@ -14,7 +14,7 @@ rl.on('close', () => {
   solve(lines);
 });
 
-function countNum(a) {
+function countNum(a) { //   求單個數的各位數指數和
   const newarr = Array.from(String(a), Number);
   let value = 0;
   for (let i = 0; i < newarr.length; i += 1) {
@@ -24,7 +24,7 @@ function countNum(a) {
   return value;
 }
 
-function solve(input) {
+function solve(input) { //  判斷 countNum 的和是否等於本身
   const tmp = input[0].split(' ');
   const tmpFirstNumber = Number(tmp[0]);
   const tmpLastNumber = Number(tmp[1]);
